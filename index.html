@@ -74,7 +74,7 @@
 						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></i></a>
-						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
+						<a href="#" onclick="playMusic()"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
 						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
 					</div>
 			</div>
@@ -125,6 +125,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 	<script src='https://codepen.io/jackharner/pen/MGRbEJ.js'></script>
 	<script  src="js/index.js"></script>
+	<script type="text/javascript">
+
+	function playMusic(){
+		var music = new Audio('music/Melody_cadmium.mp3');
+		music.play();
+	};
+
+	</script>
 	
 
 </body>
