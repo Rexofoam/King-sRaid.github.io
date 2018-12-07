@@ -140,7 +140,7 @@ footer {
   display: inline-block;
   height: 4.4em;
   left: 50%;
-  min-width: 35em;
+  min-width: 25em;
   padding: 0 10px;
   perspective: 1000px;
   position: fixed;
@@ -173,10 +173,12 @@ footer li {
   display: inline-block;
   vertical-align: top;
   position: relative;
+  bottom: 10px;
   transform: scale(1);
   transform-origin: bottom center;
   transition: transform 2s;
 }
+
 footer li:before {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 12px;
@@ -237,3 +239,5 @@ footer img:hover {
     bottom: 0;
   }
 }
+
+
