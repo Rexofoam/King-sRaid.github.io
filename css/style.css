@@ -137,6 +137,7 @@ html, body {
 }
 
 footer {
+  z-index: 1000;
   bottom: 0;
   display: inline-block;
   height: 4.4em;
@@ -241,62 +242,28 @@ footer img:hover {
   }
 }
 
-.rolldown-list {
-  text-align: left;
-  padding: 0;
+
+.kingraid_main {
+  
+  position: relative;
+  background-color: transparent;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
   margin: 0;
+  
 }
 
-.rolldown-list li {
-  padding: 1em;
-  margin-bottom: .125em;
-  display: block;
-  list-style: none;
-  text-transform: uppercase;
-  color: white;
-}
 
-.rolldown-list li a{
-  text-decoration: none;
-  color: white;
-}
-
-.rolldown-list li {
-  visibility: hidden;
-  animation: rolldown .7s 1;
-  transform-origin: 50% 0;
-  animation-fill-mode: forwards;
-}
-
-.rolldown-list li:nth-child(2n) {
-  background-color: #444;
-}
-
-.rolldown-list li:nth-child(2n+1) {
-  background-color: #333;
-}
-
-#myList {
+.kingraid_container {
   position: absolute;
-  width: 50%; 
+  z-index: 10;
+  background-color: white;
+  height: 500px;
+  width: 800px;
+  margin-left: -400px;
   left: 50%;
-  margin-left: -25%;
-}
-
-
-@keyframes rolldown {
-  0% {
-    visibility: visible;
-    transform: rotateX(180deg) perspective(500px);
-  }
-  70% {
-    visibility: visible;
-    transform: rotateX(-20deg);
-  }
-  100% {
-    visibility: visible;
-    transform: rotateX(0deg);
-  }
+  top: 100px;
 }
 
 
