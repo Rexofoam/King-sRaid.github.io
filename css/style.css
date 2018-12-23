@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 html, body {
 	width: 100%;
@@ -250,7 +251,9 @@ footer img:hover {
   height: 600px;
   width: 100%;
   overflow: hidden;
-  margin: 0;
+  top: 100px;
+  margin: 0 auto;
+  padding: 0;
   
 }
 
@@ -258,12 +261,17 @@ footer img:hover {
 .kingraid_container {
   position: absolute;
   z-index: 10;
-  background-color: white;
+  background-color: transparent;
   height: 500px;
   width: 800px;
   margin-left: -400px;
   left: 50%;
   top: 100px;
+  -webkit-transition: opacity 2s;
+  text-align: center;
 }
 
-
+.kingraid_container:hover{
+  opacity: 0.5;
+  transition-duration: 2s;
+}
