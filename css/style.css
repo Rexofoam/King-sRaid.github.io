@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html, body {
 	width: 100%;
@@ -11,7 +12,7 @@ html, body {
 }
 
 .gallery {
-	height: 1400px;
+	min-height: 450px;
 	margin: 0;
 	padding: 0;
 	background: #262626;
@@ -24,6 +25,23 @@ html, body {
 	background-size: cover;
 	background-position: center;
 }
+
+#particles-js2
+{
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/bg5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#particles-js3
+{
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/bg6.png);
+  background-size: cover;
+  background-position: center;
+}
+
 
 .card {
 	position: absolute;
@@ -107,7 +125,7 @@ html, body {
 
 .card .back .details h2 span {
 	color: #a7a7a7;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
@@ -135,6 +153,20 @@ html, body {
 
 .social-icons a:hover {
 	background: #e91e63;
+}
+
+.btn-view {
+  margin-top: 45px; 
+  height: 35px;
+  width: 115px;
+  border-color:white;
+  background-color: transparent;
+  color:white;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
 }
 
 footer {
@@ -245,9 +277,9 @@ footer img:hover {
 
 .container {
   width: 1280px;
-  min-height: 500px;
+  min-height: 300px;
   background: transparent;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -319,7 +351,55 @@ footer img:hover {
 
 }
 
+.game_container {
+  width: 1280px;
+  min-height: 500px;
+  background: white;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  visibility: hidden;
 
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column i {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: calc(50% - 35px) ;
+}
+
+.text-number {
+  text-align: center;
+  color: white;
+  font-size: 44px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.text-description {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+* For Mobile CSS
+*
+*/
 @media only screen and (max-width: 600px) {
 
 
